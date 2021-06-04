@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background9"
+    tools:context=".HintActivity">
+
+    <TextView
+        android:id="@+id/correctOrWrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/answerLabel"
+        android:textColor="#F16B6B"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWordHint" />
+
+    <TextView
+        android:id="@+id/textViewLetter"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:background="#66618595"
+        android:text="@string/textview"
+        android:textColor="#C5CED5"
+        android:textColorHint="#DCDCDC"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_car_hint"
+        tools:text="_ _ _" />
+
+    <ImageView
+        android:id="@+id/iv_car_hint"
+        android:layout_width="338dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/randomcar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hint_title" />
+
+    <EditText
+        android:id="@+id/editTextWordHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:autofillHints="d"
+        android:background="#482196F3"
+        android:ems="10"
+        android:hint="@string/enter_a_letter"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLength="1"
+        android:paddingStart="15dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="5dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#8197A8"
+        android:textColorHint="#F0ABABC8"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correctAnswerHint" />
+
+    <TextView
+        android:id="@+id/hint_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/guess_hint_title"
+        android:textAlignment="center"
+        android:textColor="#A9C3CF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/identify_button_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="submitButton"
+        android:text="@string/SUBMIT"
+        android:textColor="#A9C3CF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/correctAnswerHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="168dp"
+        android:textColor="#FFEB3B"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLetter" />
+
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="69dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="44dp"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

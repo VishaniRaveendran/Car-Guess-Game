@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Car Guess</string>
+    <string name="car_make">Identify the car make</string>
+    <string name="advanced_level">Advanced Level</string>
+    <string name="car_image">Identify the Car Image</string>
+    <string name="hints">Hints</string>
+    <string name="car_make_name">Identify Car Make</string>
+    <string name="car_logo">Car image</string>
+    <string name="logo_Image">Logo image</string>
+    <string name="make_heading">Select the brand of the car given below</string>
+    <string name="image_of_the_car">image of the car</string>
+    <string name="identify">Identify</string>
+    <string name="brand_name">Brand Name</string>
+    <string name="guess_the_car_brand">Identify the Car Brand</string>
+    <string name="randomcar">randomCar</string>
+    <string name="guess_hint_title">Guess Hint</string>
+    <string name="enter_a_letter">Enter a Letter</string>
+    <string name="incorrect_guess">Guess is Incorrect</string>
+    <string name="identify_button_text">Identify</string>
+    <string name="carimage1">carImage1</string>
+    <string name="carimage2">carImage2</string>
+    <string name="carimage3">carimage3</string>
+    <string name="guess_image_title">Guess Car Image</string>
+    <string name="identify_image_button">Identify</string>
+    <string name="view_result">Select a car brand</string>
+    <string name="CORRECT">CORRECT!</string>
+    <string name="WRONG">WRONG!</string>
+    <string name="NEXT">NEXT</string>
+    <string name="SUBMIT">SUBMIT</string>
+    <string name="nextButton">Next</string>
+    <string name="identify_answer" />
+    <string name="timer">Timer</string>
+    <string name="next">NEXT</string>
+    <string name="advanced_level_title">Advanced Level</string>
+    <string name="submit_brand_button">Submit</string>
+    <string name="car_imageview">car image</string>
+    <string name="answerLabel">answer_label</string>
+    <string name="textview_">TextView</string>
+    <string name="textview" />
+    <string-array name="car_array">
+        <item>Choose the car brand</item>
+        <item>alfa</item>
+        <item>amg</item>
+        <item>audi</item>
+        <item>bentley</item>
+        <item>bmw</item>
+        <item>bugatti</item>
+        <item>daihatsu</item>
+        <item>ferrari</item>
+        <item>ford</item>
+        <item>genesis</item>
+        <item>hyundai</item>
+        <item>jaguar</item>
+        <item>kia</item>
+        <item>lexus</item>
+        <item>lincoln</item>
+        <item>lotus</item>
+        <item>maserati</item>
+        <item>mercedesbenz</item>
+        <item>mini</item>
+        <item>opel</item>
+        <item>peugeot</item>
+        <item>proton</item>
+        <item>rangerover</item>
+        <item>rollsroyce</item>
+        <item>smart</item>
+        <item>tata</item>
+        <item>toyota</item>
+        <item>troller</item>
+        <item>vauxhall</item>
+        <item>volvo</item>
+    </string-array>
+</resources>

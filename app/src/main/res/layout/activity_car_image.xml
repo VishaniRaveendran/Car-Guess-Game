@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background9"
+    tools:context=".IdentifyCarImage">
+
+    <ImageView
+        android:id="@+id/iv_car1"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/carimage1"
+        android:onClick="OnClickFirstImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_title" />
+
+    <ImageView
+        android:id="@+id/iv_car2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/carimage2"
+        android:onClick="OnClickSecondImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_car1" />
+
+    <ImageView
+        android:id="@+id/iv_car3"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/carimage3"
+        android:onClick="OnClickThirdImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_car2" />
+
+    <TextView
+        android:id="@+id/image_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/guess_image_title"
+        android:textAlignment="center"
+        android:textColor="#A9C3CF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/brand_display_text"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:textAlignment="center"
+        android:textColor="#990EA0EF"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/iv_car1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_title"
+        app:layout_constraintVertical_bias="0.357" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:onClick="OnClickNextButton"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/car_timer"
+        android:layout_width="76dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="44dp"
+        android:textColor="#F3E8E8"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/answerImageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="24dp"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_car3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

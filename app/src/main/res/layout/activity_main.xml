@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background7"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="391dp"
+        android:layout_height="223dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/logo_Image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo15" />
+
+
+    <Button
+        android:id="@+id/carMake"
+        android:layout_width="200dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button"
+        android:onClick="launchCarMakeActivity"
+        android:shadowColor="#3F51B5"
+        android:text="@string/car_make"
+        android:textColor="#bbe1fa"
+        android:textColorHighlight="#503737"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:backgroundTint="#272343"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_switch"
+        app:rippleColor="#3F51B5"
+        app:strokeColor="#3F51B5" />
+
+    <Switch
+        android:id="@+id/timer_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/timer"
+        android:textColor="#C5AAAA"
+        android:textColorHint="#793C42AE"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/advancedLevel"
+        android:layout_width="200dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:onClick="launchAdvancedLevelActivity"
+        android:text="@string/advanced_level"
+        android:textColor="#bbe1fa"
+        android:textSize="18sp"
+        app:backgroundTint="#272343"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carImage" />
+
+    <Button
+        android:id="@+id/carImage"
+        android:layout_width="200dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:onClick="launchCarImageActivity"
+        android:text="@string/car_image"
+        android:textColor="#bbe1fa"
+        android:textSize="18sp"
+        app:backgroundTint="#272343"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hints" />
+
+    <Button
+        android:id="@+id/hints"
+        android:layout_width="200dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:onClick="launchHintActivity"
+        android:text="@string/hints"
+        android:textColor="#bbe1fa"
+        android:textSize="18sp"
+        app:backgroundTint="#272343"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carMake" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
